@@ -1,0 +1,11 @@
+base:
+  urls:
+    product: http://localhost:8080
+    order: http://localhost:8081
+    inventory: http://localhost:8082
+
+api:
+  paths:
+    product: /api/product
+    order: /api/order
+    inventory: /api/inventory

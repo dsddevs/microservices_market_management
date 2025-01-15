@@ -48,20 +48,20 @@ class ProductServiceApplicationTests {
                 """;
         RestAssured.given()
                 .contentType("application/json").body(requestBody)
-                .when().post("/api/product/creation")
+                .when().post("/api/product")
                 .then().statusCode(201)
                 .body("success", equalTo(true))
                 .body("message", equalTo("Product successfully created"));
 
 		RestAssured.given()
-				.when().get("/api/product/products")
+				.when().get("/api/product")
 				.then().statusCode(200)
 				.body("success", equalTo(true))
 				.body("data.find { it.name == 'A' }.description", equalTo("A is the best product"))
 				.body("data.find { it.name == 'A' }.price", equalTo(100.0f));
 
 		RestAssured.given()
-				.when().delete("/api/product/deletion/6782e93a34b3cc1bfd1c0bb0")
+				.when().delete("/api/product/6782e93a34b3cc1bfd1c0bb0")
 				.then().statusCode(200)
 				.body("success", equalTo(true))
 				.body("message", equalTo("Product successfully deleted"));

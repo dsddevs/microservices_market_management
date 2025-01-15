@@ -20,14 +20,14 @@ public class OrderController {
 
     private final OrderService orderService;
 
-    @PostMapping("/creation")
+    @PostMapping()
     public ResponseEntity<MessageResponse> createOrder(@RequestBody OrderRequest orderRequest){
         orderService.saveOrder(orderRequest);
         String successMessage = "Order successfully created";
         return ServerResponseUtil.createMessageResponse(true, successMessage, HttpStatus.CREATED);
     }
 
-    @GetMapping("/orders")
+    @GetMapping()
     public ResponseEntity<DataResponse<List<OrderEntity>>> getOrders(){
         List<OrderEntity> orders = orderService.getAllOrders();
         return ServerResponseUtil.createDataResponse(true, orders, HttpStatus.OK);

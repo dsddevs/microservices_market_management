@@ -59,13 +59,13 @@ class OrderServiceApplicationTests {
         InventoryClientStub.stubInventoryCall("apple", 15);
         RestAssured.given()
                 .contentType("application/json").body(requestBody)
-                .when().post("/api/order/creation")
+                .when().post("/api/order")
                 .then().statusCode(201)
                 .body("success", equalTo(true))
                 .body("message", equalTo("Order successfully created"));
 
         RestAssured.given()
-                .when().get("/api/order/orders")
+                .when().get("/api/order")
                 .then().statusCode(200)
                 .body("success", equalTo(true))
                 .body("data.find { it.orderNumber == '1' }.skuCode", equalTo("apple"))

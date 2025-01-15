@@ -20,20 +20,20 @@ public class ProductController {
 
     private final ProductService productService;
 
-    @PostMapping("/creation")
+    @PostMapping()
     public ResponseEntity<MessageResponse> createProduct(@RequestBody ProductRequest productRequest) {
         productService.saveCreatedProduct(productRequest);
         String successMessage = "Product successfully created";
         return ServerResponseUtil.createMessageResponse(true, successMessage, HttpStatus.CREATED);
     }
 
-    @GetMapping("/products")
+    @GetMapping()
     public ResponseEntity<DataResponse<List<ProductEntity>>> getProducts() {
         List<ProductEntity> products = productService.getAllProducts();
         return ServerResponseUtil.createDataResponse(true, products, HttpStatus.OK);
     }
 
-    @DeleteMapping("/deletion/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<MessageResponse> deleteProduct(@PathVariable String id) {
         productService.deleteProductById(id);
         String successMessage = "Product successfully deleted";

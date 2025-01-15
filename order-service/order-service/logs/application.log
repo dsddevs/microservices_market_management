@@ -1734,3 +1734,229 @@ Matched-Stub-Id: [5fa056e1-80fd-4b7e-b082-35a5f5f3591b]
 2025-01-15 06:15:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-15 06:15:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-15 06:15:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-15 08:17:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-15 08:17:14 [main] INFO  d.m.o.OrderServiceApplicationTests - Starting OrderServiceApplicationTests using Java 21.0.4 with PID 39212 (started by dsd in C:\DSD\Study\projects\java_projects\microservices\order-service\order-service)
+2025-01-15 08:17:14 [main] INFO  d.m.o.OrderServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 08:17:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15 08:17:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2025-01-15 08:17:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ce5404ea-76f8-31da-804a-6d0a45a891cd
+2025-01-15 08:17:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-01-15 08:17:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-01-15 08:17:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-15 08:17:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-15 08:17:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-15 08:17:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1010 ms
+2025-01-15 08:17:15 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:58046/test (MySQL 8.3)
+2025-01-15 08:17:16 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2025-01-15 08:17:16 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `test`.`flyway_schema_history` does not exist yet
+2025-01-15 08:17:16 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.014s)
+2025-01-15 08:17:16 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `test`.`flyway_schema_history` ...
+2025-01-15 08:17:16 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: << Empty Schema >>
+2025-01-15 08:17:16 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `test` to version "1 - init"
+2025-01-15 08:17:16 [main] WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2025-01-15 08:17:16 [main] WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2025-01-15 08:17:16 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `test`, now at version v1 (execution time 00:00.049s)
+2025-01-15 08:17:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15 08:17:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-15 08:17:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-15 08:17:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15 08:17:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-15 08:17:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27f6e2c3
+2025-01-15 08:17:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-15 08:17:16 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15 08:17:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-15 08:17:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15 08:17:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15 08:17:17 [main] INFO  tc.mysql:latest - Creating container for image: mysql:latest
+2025-01-15 08:17:17 [main] INFO  tc.mysql:latest - Container mysql:latest is starting: ebb6a9276ca0ab77d2a034183bbe582de92bcef7bc50f9a8208d2fc7869b9027
+2025-01-15 08:17:17 [main] INFO  tc.mysql:latest - Waiting for database connection to become available at jdbc:mysql://localhost:58178/test using query 'SELECT 1'
+2025-01-15 08:17:27 [main] INFO  tc.mysql:latest - Container mysql:latest started in PT9.7833585S
+2025-01-15 08:17:27 [main] INFO  tc.mysql:latest - Container is started (JDBC URL: jdbc:mysql://localhost:58178/test)
+2025-01-15 08:17:29 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-01-15 08:17:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-01-15 08:17:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 58264 (http) with context path '/'
+2025-01-15 08:17:30 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-01-15 08:17:30 [main] INFO  d.m.o.OrderServiceApplicationTests - Started OrderServiceApplicationTests in 17.489 seconds (process running for 33.869)
+2025-01-15 08:17:30 [qtp384455758-145] INFO  WireMock - Admin request received:
+127.0.0.1 - POST /mappings
+
+Content-Length: [488]
+Content-Type: [text/plain; charset=UTF-8]
+Host: [localhost:11477]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/21.0.4)]
+{
+  "id" : "f7a8c0f3-85a0-4db8-8281-e5deb491f983",
+  "request" : {
+    "urlPath" : "/api/inventory",
+    "method" : "GET",
+    "queryParameters" : {
+      "skuCode" : {
+        "equalTo" : "apple"
+      },
+      "quantity" : {
+        "equalTo" : "15"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"success\": true}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "f7a8c0f3-85a0-4db8-8281-e5deb491f983"
+}
+
+2025-01-15 08:17:31 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-15 08:17:31 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-15 08:17:31 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-15 08:17:31 [qtp384455758-119] INFO  WireMock - Request received:
+127.0.0.1 - GET /api/inventory?skuCode=apple&quantity=15
+
+Accept: [*/*]
+User-Agent: [Java/21.0.4]
+Host: [localhost:11477]
+Connection: [keep-alive]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"success\": true}",
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [f7a8c0f3-85a0-4db8-8281-e5deb491f983]
+
+2025-01-15 08:17:32 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-15 08:17:32 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-15 08:17:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15 08:17:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-15 08:17:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-15 17:59:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-15 17:59:48 [main] INFO  d.m.o.OrderServiceApplicationTests - Starting OrderServiceApplicationTests using Java 21.0.4 with PID 31956 (started by dsd in C:\DSD\Study\projects\java_projects\microservices\order-service\order-service)
+2025-01-15 17:59:48 [main] INFO  d.m.o.OrderServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-01-15 17:59:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-15 17:59:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2025-01-15 17:59:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ce5404ea-76f8-31da-804a-6d0a45a891cd
+2025-01-15 17:59:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 0 (http)
+2025-01-15 17:59:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+2025-01-15 17:59:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-15 17:59:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-15 17:59:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-15 17:59:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1141 ms
+2025-01-15 17:59:50 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:60592/test (MySQL 8.3)
+2025-01-15 17:59:50 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: MySQL 8.3 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2025-01-15 17:59:50 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `test`.`flyway_schema_history` does not exist yet
+2025-01-15 17:59:50 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.012s)
+2025-01-15 17:59:50 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `test`.`flyway_schema_history` ...
+2025-01-15 17:59:50 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `test`: << Empty Schema >>
+2025-01-15 17:59:50 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `test` to version "1 - init"
+2025-01-15 17:59:50 [main] WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2025-01-15 17:59:50 [main] WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2025-01-15 17:59:50 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `test`, now at version v1 (execution time 00:00.049s)
+2025-01-15 17:59:51 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-15 17:59:51 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-15 17:59:51 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-15 17:59:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-15 17:59:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-15 17:59:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@179f30b7
+2025-01-15 17:59:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-15 17:59:51 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-15 17:59:51 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-15 17:59:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-15 17:59:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15 17:59:51 [main] INFO  tc.mysql:latest - Creating container for image: mysql:latest
+2025-01-15 17:59:51 [main] INFO  tc.mysql:latest - Container mysql:latest is starting: 04c15fa75f0663607187546959472ab05a4c6e1e584daee0d065cf4211dd14c5
+2025-01-15 17:59:52 [main] INFO  tc.mysql:latest - Waiting for database connection to become available at jdbc:mysql://localhost:60721/test using query 'SELECT 1'
+2025-01-15 18:00:02 [main] INFO  tc.mysql:latest - Container mysql:latest started in PT10.7095101S
+2025-01-15 18:00:02 [main] INFO  tc.mysql:latest - Container is started (JDBC URL: jdbc:mysql://localhost:60721/test)
+2025-01-15 18:00:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+2025-01-15 18:00:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 60822 (http) with context path '/'
+2025-01-15 18:00:03 [main] INFO  d.m.o.OrderServiceApplicationTests - Started OrderServiceApplicationTests in 15.586 seconds (process running for 30.571)
+2025-01-15 18:00:04 [qtp1928973631-144] INFO  WireMock - Admin request received:
+127.0.0.1 - POST /mappings
+
+Content-Length: [488]
+Content-Type: [text/plain; charset=UTF-8]
+Host: [localhost:10186]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/21.0.4)]
+{
+  "id" : "c7c94cee-6993-4bbe-a89c-23e9581c2822",
+  "request" : {
+    "urlPath" : "/api/inventory",
+    "method" : "GET",
+    "queryParameters" : {
+      "skuCode" : {
+        "equalTo" : "apple"
+      },
+      "quantity" : {
+        "equalTo" : "15"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"success\": true}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "c7c94cee-6993-4bbe-a89c-23e9581c2822"
+}
+
+2025-01-15 18:00:04 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-15 18:00:04 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-15 18:00:04 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-15 18:00:04 [qtp1928973631-119] INFO  WireMock - Request received:
+127.0.0.1 - GET /api/inventory?skuCode=apple&quantity=15
+
+Accept: [*/*]
+User-Agent: [Java/21.0.4]
+Host: [localhost:10186]
+Connection: [keep-alive]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "body" : "{\"success\": true}",
+  "headers" : {
+    "Content-Type" : "application/json"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Matched-Stub-Id: [c7c94cee-6993-4bbe-a89c-23e9581c2822]
+
+2025-01-15 18:00:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-15 18:00:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-15 18:00:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-15 18:00:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-15 18:00:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -18,6 +18,15 @@ public class GlobalException {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
     }
 
+    @ExceptionHandler(ProductAlreadyExistsException.class)
+    public ResponseEntity<MessageResponse> handleProductAlreadyExistsException(ProductAlreadyExistsException e) {
+        MessageResponseData response = new MessageResponseData();
+        response.setSuccess(false);
+        response.setMessage(e.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(response);
+    }
+
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<MessageResponse> handleGeneralException(Exception ex) {
         MessageResponseData response = new MessageResponseData("Server error occurred - " + ex.getMessage());

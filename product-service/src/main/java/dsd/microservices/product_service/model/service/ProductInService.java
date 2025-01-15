@@ -1,5 +1,6 @@
 package dsd.microservices.product_service.model.service;
 
+import dsd.microservices.product_service.exception.ProductAlreadyExistsException;
 import dsd.microservices.product_service.mapper.ProductMapper;
 import dsd.microservices.product_service.model.entity.ProductEntity;
 import dsd.microservices.product_service.model.repository.ProductRepository;
@@ -19,7 +20,7 @@ public class ProductInService implements ProductService {
 
     @Override
     public void saveCreatedProduct(ProductRequest productRequest) {
-        ProductEntity newProduct = productMapper.toEntity(productRequest);
+        ProductEntity newProduct = createProduct(productRequest);
         productRepository.save(newProduct);
     }
 
@@ -35,5 +36,13 @@ public class ProductInService implements ProductService {
             ProductEntity product = currentProduct.get();
             productRepository.delete(product);
         }
+    }
+
+    private ProductEntity createProduct(ProductRequest productRequest){
+        boolean hasProduct = productRepository.existsByDescription(productRequest.description());
+        if (hasProduct) {
+            throw new ProductAlreadyExistsException("Product already exists");
+        }
+        return productMapper.toEntity(productRequest);
     }
 }
