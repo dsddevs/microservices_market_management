@@ -1,0 +1,18 @@
+spring:
+
+  application:
+    name: product-service
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: product-service
+
+server:
+  port: 8080

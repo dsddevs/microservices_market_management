@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: inventory-service
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inventory_service
+    username: root
+    password: test123
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5           # connection count
+      idle-timeout: 300000      # timeout - 5 minutes
+      max-lifetime: 1200000     # lifetime between connections - 20 minutes
+
+  jpa:
+    open-in-view: false
+    database: mysql
+    properties:
+      hibernate:
+        format_sql: false
+        jdbc:
+          batch_size: 50
+        order_inserts: true
+        order_updates: true
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  security:
+    require-ssl: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,info
+  endpoint:
+    health:
+      show-details: when_authorized
+
+server:
+  port: 8082
