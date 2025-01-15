@@ -27,6 +27,7 @@ inventory through loosely coupled services that communicate via REST APIs and me
 * FlywayDB
 * MySQL
 * Docker
+* Gateway API
 </div>
 
 <div align="center">
