@@ -16,7 +16,7 @@ inventory through loosely coupled services that communicate via REST APIs and me
  THE PROJECT IS BUILT USING THE FOLLOWING TECHNOLOGIES:
 </h1>
 
-* Spring Boot: (web, jpa, validation, test, testcontainers, mongodb),
+* Spring Boot: (web, jpa, validation, test, testcontainers, mongodb, oauth2-resource-server),
 * Spring Cloud: (contract-stub-runner, openfeign)
 * Map Struct
 * Lombok
@@ -28,6 +28,7 @@ inventory through loosely coupled services that communicate via REST APIs and me
 * MySQL
 * Docker
 * Gateway API
+* Keycloak 
 </div>
 
 <div align="center">
