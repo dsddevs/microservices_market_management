@@ -1,11 +1,30 @@
+# SPRING APP OPTION
+spring:
+  application:
+    name: market-gateway
+
+  # MultiApplication Properties
+  profiles:
+    include:
+      - paths
+      - white
+
+  # Spring Security - Keycloak Logic
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/market-security-realm
+
+# SERVER OPTION
+server:
+  port: 9000
+
+# MICROSERVICES BASE-URLS OPTION
 base:
   urls:
     product: http://localhost:8080
     order: http://localhost:8081
     inventory: http://localhost:8082
 
-api:
-  paths:
-    product: /api/product
-    order: /api/order
-    inventory: /api/inventory
+

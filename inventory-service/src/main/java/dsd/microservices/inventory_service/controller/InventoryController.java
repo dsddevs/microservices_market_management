@@ -21,7 +21,7 @@ public class InventoryController {
 
     private final InventoryService inventoryService;
 
-    @GetMapping()
+    @GetMapping
     @Operation(summary = "Inventory checker")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Inventory successfully checked"),

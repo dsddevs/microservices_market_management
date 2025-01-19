@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "white.paths",
+      "type": "java.lang.String",
+      "description": "Description for white.paths."
+  }
+] }

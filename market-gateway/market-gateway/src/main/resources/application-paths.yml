@@ -1,0 +1,26 @@
+# Services API Paths
+api:
+  paths:
+    product: /api/product
+    order: /api/order
+    inventory: /api/inventory
+
+# Service Swagger API Paths
+swagger:
+  api:
+    paths:
+      product: /aggregate/product-service/v3/api-docs
+      order: /aggregate/order-service/v3/api-docs
+      inventory: /aggregate/inventory-service/v3/api-docs
+
+
+# Selector for Service API Paths with Swagger UI/Open API
+springdoc:
+  swagger-ui:
+    urls:
+      - name: Product Service
+        url: /aggregate/product-service/v3/api-docs
+      - name: Order Service
+        url: /aggregate/order-service/v3/api-docs
+      - name: Inventory Service
+        url: /aggregate/inventory-service/v3/api-docs

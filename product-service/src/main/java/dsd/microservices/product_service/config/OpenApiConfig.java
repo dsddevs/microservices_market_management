@@ -6,10 +6,12 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.servers.Server;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Collections;
 import java.util.List;
 
+@Configuration
 public class OpenApiConfig {
 
     @Bean
@@ -22,8 +24,8 @@ public class OpenApiConfig {
 
     private Info initInfo() {
         return new Info()
-                .title("PRODUCT SERVICE API")
-                .description("API Documentation for PRODUCT SERVICE")
+                .title("Product Service API")
+                .description("API Documentation for Product Service")
                 .termsOfService("https://giveswagger.com/terms-of-service")
                 .version("1.0")
                 .license(new License().name("Apache 2.0").url("https://springdoc.org/"));
@@ -31,7 +33,7 @@ public class OpenApiConfig {
 
     private ExternalDocumentation initExternalDocs() {
         return new ExternalDocumentation()
-                .description("Additional Documentation for product service")
+                .description("Additional Documentation for Product Service")
                 .url("https://springdoc.org/");
     }
 

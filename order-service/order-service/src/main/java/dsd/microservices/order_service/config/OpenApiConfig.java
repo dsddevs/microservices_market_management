@@ -26,8 +26,8 @@ public class OpenApiConfig {
 
     private Info initInfo(){
         return new Info()
-                .title("ORDER SERVICE API")
-                .description("Api Documentation for ORDER SERVICE")
+                .title("Order Service API")
+                .description("Api Documentation for Order Service")
                 .termsOfService("https://giveswagger.com/terms-of-service")
                 .version("v1")
                 .license(new License().name("Apache 2.0").url("https://springdoc.org/"));
@@ -35,7 +35,7 @@ public class OpenApiConfig {
 
     private ExternalDocumentation initExternalDocs(){
         return new ExternalDocumentation()
-                .description("Additional Documentation for order service")
+                .description("Additional Documentation for Order Service")
                 .url("https://springdoc.org/");
     }
 

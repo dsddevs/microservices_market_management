@@ -17,33 +17,32 @@ import java.util.List;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI configureOpenApi(){
+    public OpenAPI configureOpenApi() {
         return new OpenAPI()
                 .info(initInfo())
                 .externalDocs(initExternalDocs())
                 .servers(initServer());
     }
 
-    private Info initInfo(){
+    private Info initInfo() {
         return new Info()
-                .title("INVENTORY SERVICE API")
-                .description("Application documentation for INVENTORY SERVICE")
+                .title("Inventory Service API")
+                .description("API Documentation for Inventory Service")
                 .termsOfService("https://giveswagger.com/terms-of-service")
                 .version("v1")
                 .license(new License().name("Apache 2.0").url("https://springdoc.org/"));
     }
 
-    private ExternalDocumentation initExternalDocs(){
+    private ExternalDocumentation initExternalDocs() {
         return new ExternalDocumentation()
-                .description("Additional Documentation for inventory service")
+                .description("Additional Documentation for Inventory Service")
                 .url("https://springdoc.org/");
     }
 
-    private List<Server> initServer(){
+    private List<Server> initServer() {
         Server newServer = new Server()
                 .description("Inventory Development Server")
                 .url("http://localhost:8082");
-       return Collections.singletonList(newServer);
+        return Collections.singletonList(newServer);
     }
-
 }
