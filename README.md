@@ -26,6 +26,7 @@ inventory through loosely coupled services that communicate via REST APIs and me
 * Apache Commons
 * FlywayDB
 * MySQL
+* SpringDocs / OpenAPI
 * Docker
 * Gateway API
 * Keycloak 
