@@ -1,0 +1,17 @@
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html #Пут для SWAGGER UI Interface
+    operations-sorter: method #Сортировка операций по HTTP методам (GET, POST, PUT, ...)
+    disable-swagger-default-url: true #Отключение перенаправления с default URL
+    tags-sorter: alpha  # Сортировка тегов по алфавиту
+    filter: true  # Включает поиск по API
+    display-request-duration: true  # Показывает время выполнения запросов
+    show-extensions: true  # Показывает расширения OpenAPI
+    show-common-extensions: true  # Показывает общие расширения
+    default-models-expand-depth: 1  # Глубина развертывания моделей
+    default-model-expand-depth: 1  # Глубина развертывания модели
+    display-operation-id: false  # Отображение ID операции
+    doc-expansion: none  # Начальное состояние развертывания (none, list, full)
+  api-docs:
+    path: /api-docs # URL-путь для доступа к JSON документации API
+    version: openapi_3_0
