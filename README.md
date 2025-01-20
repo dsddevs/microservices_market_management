@@ -29,7 +29,8 @@ inventory through loosely coupled services that communicate via REST APIs and me
 * SpringDocs / OpenAPI
 * Docker
 * Gateway API
-* Keycloak 
+* Keycloak
+* Rest Client
 </div>
 
 <div align="center">
